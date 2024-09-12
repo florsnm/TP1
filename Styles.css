@@ -22,10 +22,10 @@
 }
 
 .menu a.selected {
-    background-color: white;
-    color: darkturquoise;
-    padding-left: 10px;
-    font-weight: 700;
+    background-color: darkturquoise;
+    color: white;
+    padding-left: 10px 0;
+    font-weight: 400;
 }
 
 .menu a:hover {
