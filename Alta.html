@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alta de Alumno</title>
+    <link rel="stylesheet" href="Styles.css">
+</head>
+<body>
+
+<div class="menu">
+    <a href="overview.html">Overview</a>
+    <a href="Alumno.html">Alumnos</a>
+    <a href="Alta.html" class="selected">Alta de Alumno</a>
+</div>
+
+<div class="container">
+    <div class="header">
+        <h2>Alta de Alumno</h2>
+        <button class="back" onclick="window.location.href='student.html'">Back</button>
+    </div>
+
+    <form id="studentForm">
+        <label for="firstName">Nombre:</label>
+        <input type="text" id="firstName" required>
+
+        <label for="lastName">Apellido:</label>
+        <input type="text" id="lastName" required>
+
+        <button type="submit">Agregar Alumno</button>
+    </form>
+
+    <script src="app.js"></script>
+</div>
+
+</body>
+</html>
