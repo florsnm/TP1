@@ -17,15 +17,15 @@
     display: block;
     padding: 10px 0;
     text-decoration: none;
-    color: white;
-    font-weight: 400;
+    color: black;
+    font-weight: 700;
 }
 
 .menu a.selected {
-    background-color: darkturquoise;
-    color: white;
+    background-color:darkturquoise;
+    color: black;
     padding-left: 10px 0;
-    font-weight: 400;
+    font-weight: 700;
 }
 
 .menu a:hover {
@@ -40,7 +40,7 @@
 
 /* Cabecera - título */
 .header h2 {
-    box-shadow: 0px 1px 2px -1px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 1px 2px -1px rgba(92, 13, 79, 0.75);
     padding: 0 20px;
     font-size: 24px;
 }
