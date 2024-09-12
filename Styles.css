@@ -1,0 +1,163 @@
+/* Estilos generales para el layout */
+
+/* Menú vertical */
+.menu {
+    width: 200px;
+    background-color: darkturquoise;
+    padding-left: 20px;
+    box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.75);
+    position: fixed;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+/* Enlaces del menú */
+.menu a {
+    display: block;
+    padding: 10px 0;
+    text-decoration: none;
+    color: white;
+    font-weight: 400;
+}
+
+.menu a.selected {
+    background-color: white;
+    color: darkturquoise;
+    padding-left: 10px;
+    font-weight: 700;
+}
+
+.menu a:hover {
+    background-color: paleturquoise;
+}
+
+/* Contenedor principal que excluye el menú */
+.container {
+    margin-left: 220px; /* Ajuste para dejar espacio al menú */
+    padding: 20px;
+}
+
+/* Cabecera - título */
+.header h2 {
+    box-shadow: 0px 1px 2px -1px rgba(0, 0, 0, 0.75);
+    padding: 0 20px;
+    font-size: 24px;
+}
+
+/* Botón de navegación/agregar */
+.header button {
+    box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.75);
+    background-color: darkturquoise;
+    color: white;
+    padding: 7px;
+    cursor: pointer;
+    border: none;
+    margin-left: 10px;
+}
+
+/* Botón atrás */
+button.back {
+    background-color: red;
+    color: white;
+    padding: 7px;
+    cursor: pointer;
+    border: none;
+}
+
+/* Componentes visuales */
+
+/* Card */
+.card {
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.75);
+}
+
+.card h1 {
+    font-size: 32px;
+}
+
+/* Search bar */
+.search-bar {
+    display: flex;
+    margin-bottom: 5px;
+}
+
+.search-bar input {
+    flex-grow: 1;
+    padding: 10px;
+}
+
+.search-bar button {
+    padding: 10px;
+    background-color: darkturquoise;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Tabla */
+table {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+/* Paginación */
+#paginacion {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 5px;
+}
+
+#paginacion button {
+    padding: 7px;
+    margin-left: 5px;
+    background-color: darkturquoise;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#paginacion button.active {
+    background-color: paleturquoise;
+}
+
+/* Formulario */
+form {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 10px;
+    padding: 10px;
+    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.75);
+}
+
+form label {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+}
+
+form input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Botón agregar (reusar el estilo de botón de navegación/agregar) */
+form button {
+    grid-column: 1 / -1; /* Ocupa ambas columnas del grid */
+    background-color: darkturquoise;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.75);
+}

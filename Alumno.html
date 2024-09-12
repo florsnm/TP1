@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listado de Alumnos</title>
+    <link rel="stylesheet" href="Styles.css">
+</head>
+<body>
+
+    <div class="menu">
+        <a href="overview.html">Overview</a>
+        <a href="Alumno.html">Alumnos</a>
+        <a href="Alta.html" class="selected">Alta de Alumno</a>
+    </div>
+
+<div class="container">
+    <div class="header">
+        <h2>Listado de Alumnos</h2>
+        <button onclick="window.location.href='register.html'">Agregar Alumno</button>
+    </div>
+
+    <div class="search-bar">
+        <input type="text" id="searchInput" placeholder="Buscar por nombre o apellido">
+        <button onclick="searchStudent()">Buscar</button>
+    </div>
+
+    <div class="rows-per-page">
+        <label for="rowsPerPage">Rows per page:</label>
+        <select id="rowsPerPage" onchange="changeRowsPerPage()">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="5" selected>5</option> <!-- Default value -->
+            <option value="10">10</option>
+        </select>
+    </div>
+    
+    <table border="1" style="width: 100%; border-collapse: collapse;">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nombre</th>
+                <th>Apellido</th>
+            </tr>
+        </thead>
+        <tbody id="studentTableBody">
+            <!-- Students will be inserted here dynamically -->
+        </tbody>
+    </table>
+    <div id="pagination"></div> 
+
+    <script src="app.js"></script>
+</div>
+
+</body>
+</html>
