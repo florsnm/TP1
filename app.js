@@ -93,28 +93,32 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
      // Procesar formulario de alta de alumno
-    document.getElementById("studentForm")?.addEventListener("submit", function (e) {
+     document.getElementById("studentForm")?.addEventListener("submit", function (e) {
         e.preventDefault();  // Evitar que el formulario haga un submit normal y recargue la página
-        
+
         const firstName = document.getElementById("firstName").value.trim();
         const lastName = document.getElementById("lastName").value.trim();
-
+    
         if (firstName && lastName) {
             const students = getStudents();
             const id = students.length + 1; // Generate unique ID
             const newStudent = { id, firstName, lastName };
             students.push(newStudent);
             saveStudents(students);
-
+    
             alert("Alumno agregado exitosamente");
-
+    
             // Clear form fields
             document.getElementById("firstName").value = '';
             document.getElementById("lastName").value = '';
+    
+            // Redirigir de vuelta a la página de listado de alumnos
+            window.location.href = 'Student.html';
         } else {
-            alert("Please complete all fields.");
+            alert("Por favor, complete todos los cambios.");
         }
     });
+    
 
   // Mostrar alumnos si estamos en la página de alumnos
     if (document.getElementById("studentTableBody")) {
@@ -124,4 +128,5 @@ document.addEventListener("DOMContentLoaded", function () {
     // Hacer que la función esté disponible globalmente
     window.changeRowsPerPage = changeRowsPerPage;
 });
+
 
